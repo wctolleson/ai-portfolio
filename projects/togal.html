@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Togal.AI Estimating Project | Chris Tolleson</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">Chris Tolleson</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#weekly-summaries">Weekly AI Summaries</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <a href="../projects.html" class="back-link" style="color: white; opacity: 0.8;">← Back to Projects</a>
+                <h1>Togal.AI Estimating Evaluation</h1>
+                <p class="subtitle">AI-Powered Construction Takeoff Analysis Across Multiple Building Types</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>This project evaluates <strong>Togal.AI</strong>, an AI-powered construction takeoff and estimating tool, by testing its capabilities across multiple building types and drawing formats. The goal was to assess the tool's accuracy, identify its strengths and limitations, and document the manual corrections required to produce reliable quantity data.</p>
+                
+                <h3>Buildings Evaluated</h3>
+                <ul>
+                    <li>Multi-Story Hotel</li>
+                    <li>Youth Center</li>
+                    <li>Fire Station (2 floors)</li>
+                    <li>Building Elevation</li>
+                    <li>Military Office (2 floors)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--neutral-light);">
+            <div class="container">
+                <h2>Building 1: Multi-Story Hotel</h2>
+                
+                <h3>Togal.AI Raw Output Issues</h3>
+                <ul>
+                    <li><strong>Canopy with foundations not shown</strong> — AI did not identify structural canopy elements</li>
+                    <li><strong>Pool not filled in</strong> — Water features not properly recognized</li>
+                    <li><strong>Hot tub not identified</strong> — Smaller amenity features missed</li>
+                    <li><strong>Patio and porches not identified</strong> — Outdoor living spaces excluded from takeoff</li>
+                </ul>
+                
+                <h3>Corrections Applied</h3>
+                <p>Manual markup required to identify exterior amenity areas and structural features that the AI classification system missed.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Building 2: Youth Center</h2>
+                
+                <h3>Togal.AI Raw Output Issues</h3>
+                <ul>
+                    <li><strong>Foundation plan not recognized</strong> — AI did not identify the drawing as a foundation plan</li>
+                    <li><strong>Grade beams not identified</strong> — Critical structural elements missed entirely</li>
+                    <li><strong>Column bay outside building envelope</strong> — Incorrectly included area that needed manual removal</li>
+                </ul>
+                
+                <h3>Corrected Data</h3>
+                <div class="card" style="cursor: default;">
+                    <ul style="list-style: none; margin: 0; padding: 0;">
+                        <li><strong>Footprint:</strong> 18,647.67 SF</li>
+                        <li><strong>Net Area:</strong> 29,146.75 SF</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--neutral-light);">
+            <div class="container">
+                <h2>Building 3: Fire Station (1st & 2nd Floor)</h2>
+                
+                <h3>Overall Assessment</h3>
+                <div class="card" style="cursor: default; background: #d4edda; border-left: 4px solid #28a745;">
+                    <p style="margin: 0;"><strong>✓ Impressive Performance:</strong> Overall, Togal was very impressive on this fire station floorplan. Polygons were not too far off from the start.</p>
+                </div>
+                
+                <h3>Items Added Manually</h3>
+                <p>Found myself looking for fixtures and equipment that weren't marked:</p>
+                <ul>
+                    <li>Fire poles</li>
+                    <li>Water fountain</li>
+                    <li>Dishwasher</li>
+                </ul>
+                
+                <h3>2nd Floor Issue</h3>
+                <ul>
+                    <li><strong>"Open to below" not recognized</strong> — Togal appears to think there is a slab where there is actually a double-height space</li>
+                </ul>
+                
+                <h3>Corrected Data</h3>
+                <div class="card" style="cursor: default;">
+                    <p><strong>First Floor:</strong></p>
+                    <ul style="list-style: none; margin: 0; padding: 0;">
+                        <li>Footprint: 6,753.16 SF</li>
+                        <li>Net Area: 6,042.51 SF</li>
+                        <li>Doors Area: 44.34 SF</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Building 4: Building Elevation</h2>
+                
+                <h3>Togal.AI Raw Output Issues</h3>
+                <div class="card" style="cursor: default; background: #f8d7da; border-left: 4px solid #dc3545;">
+                    <p style="margin: 0;"><strong>⚠ Significant Issues:</strong> The Togal.AI first pass on the elevation did not pick up the majority of the building.</p>
+                </div>
+                
+                <h3>Problems Encountered</h3>
+                <ul>
+                    <li><strong>Hatching recognition required</strong> — Had to use tools to identify concrete panels, brick veneer, and louvers</li>
+                    <li><strong>Column lines filled incorrectly</strong> — Column lines were being filled in as part of the building</li>
+                    <li><strong>Glass pattern recognition failed</strong> — Did not work on this elevation</li>
+                </ul>
+                
+                <h3>New Classifications Added</h3>
+                <ul>
+                    <li>Brick veneer</li>
+                    <li>Louvers</li>
+                    <li>Other façade elements</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--neutral-light);">
+            <div class="container">
+                <h2>Building 5: Military Office (1st & 2nd Floor)</h2>
+                
+                <h3>Togal.AI Raw Output Issues</h3>
+                <ul>
+                    <li><strong>Open-space utility room misidentified</strong> — Togal thinks this area is inside the building when it's not</li>
+                    <li><strong>Concrete slabs not recognized</strong> — Structural elements missed</li>
+                    <li><strong>Ceiling types not distinguished</strong> — No differentiation between grid ceiling, gypsum, and open air no-ceiling areas</li>
+                    <li><strong>Polygons not separated</strong> — Drop-in grid ceiling and metal soffit system combined incorrectly</li>
+                </ul>
+                
+                <h3>Corrected Data</h3>
+                <div class="card" style="cursor: default;">
+                    <ul style="list-style: none; margin: 0; padding: 0;">
+                        <li><strong>Footprint:</strong> 1,779.63 SF (734.07 SF + 1,045.56 SF)</li>
+                        <li><strong>Net Area:</strong> 1,097.12 SF</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Key Findings</h2>
+                
+                <div class="card-grid">
+                    <div class="card" style="cursor: default; border-left: 4px solid var(--accent);">
+                        <h3>Strengths</h3>
+                        <ul>
+                            <li>Strong performance on standard floor plans</li>
+                            <li>Good polygon accuracy for common room types</li>
+                            <li>Effective for rapid first-pass takeoffs</li>
+                            <li>Time savings on routine spaces</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="cursor: default; border-left: 4px solid #dc3545;">
+                        <h3>Limitations</h3>
+                        <ul>
+                            <li>Struggles with foundation plans</li>
+                            <li>Elevation takeoffs need significant manual work</li>
+                            <li>Misses specialty fixtures and equipment</li>
+                            <li>Doesn't recognize "open to below" conditions</li>
+                            <li>Ceiling type differentiation needs improvement</li>
+                            <li>Glass pattern recognition unreliable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--neutral-light);">
+            <div class="container">
+                <h2>Conclusions</h2>
+                <div class="card" style="cursor: default;">
+                    <p><strong>Togal.AI is a valuable tool for accelerating the takeoff process</strong>, particularly for floor plans with standard room configurations. However, it requires professional oversight and manual correction to produce reliable estimates.</p>
+                    <p style="margin-bottom: 0;"><strong>Best practices for using Togal.AI:</strong></p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Always review raw output against original drawings</li>
+                        <li>Plan for manual additions of specialty items (fixtures, equipment)</li>
+                        <li>Expect significant correction work on elevations and foundations</li>
+                        <li>Verify building envelope boundaries</li>
+                        <li>Check multi-story conditions (open to below, double-height spaces)</li>
+                    </ul>
+                </div>
+                
+                <div style="text-align: center; margin-top: var(--spacing-lg);">
+                    <a href="../projects.html" class="btn btn-primary" style="background: var(--primary); color: white;">← Back to All Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Chris Tolleson | CMET 6000 - AI in Construction and Facilities | UNC Charlotte</p>
+        </div>
+    </footer>
+</body>
+</html>

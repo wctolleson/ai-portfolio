@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMAR GMP EVM Alternative | Chris Tolleson</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">Chris Tolleson</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#weekly-summaries">Weekly AI Summaries</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <a href="../projects.html" class="back-link" style="color: white; opacity: 0.8;">← Back to Projects</a>
+                <h1>CMAR GMP EVM Alternative</h1>
+                <p class="subtitle">An Alternative Approach to Earned Value Management Without Resource-Loaded Schedules</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Research Overview</h2>
+                <p>This white paper presents an alternative approach to traditional Earned Value Management (EVM) tailored specifically for complex construction projects delivered under Construction Manager at Risk (CMAR) contracts with Guaranteed Maximum Price (GMP) provisions.</p>
+                
+                <h3>Target Project Scenario</h3>
+                <ul>
+                    <li>Complex Construction Project, $50M – $250M</li>
+                    <li>20–40 Subcontractors</li>
+                    <li>Custom Vertical Construction – Limited to No Repetitive Work Activities</li>
+                    <li>Guaranteed Maximum Price (GMP) Contract Between Owner and CMAR</li>
+                    <li>Lump Sum Subcontracts (Especially Hard Bid)</li>
+                    <li>Resource Loaded Schedule Not Planned / Procured</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--neutral-light);">
+            <div class="container">
+                <h2>Traditional EVM Overview</h2>
+                <p>EVM is a tool that combines schedule, cost, resources, and performance into one reporting framework.</p>
+                
+                <img src="../assets/evm-formulas.jpg" alt="EVM Formulas Reference Sheet" style="max-width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow); margin: var(--spacing-md) 0;">
+                
+                <h3>Key Definitions</h3>
+                <ul>
+                    <li><strong>Planned Value (PV) or Baseline:</strong> Original baseline schedule and estimate spread over time</li>
+                    <li><strong>Earned Value (EV):</strong> Physical progress or work put in place against your PV</li>
+                    <li><strong>Actual Value / Actual Cost (AV or AC):</strong> Actual cost incurred to complete the physical progress</li>
+                    <li><strong>Forecast:</strong> Physical work still needing completion</li>
+                </ul>
+                
+                <h3>Key Metrics</h3>
+                <div class="card-grid">
+                    <div class="card" style="cursor: default;">
+                        <h4>SPI (Schedule Performance Index)</h4>
+                        <p><strong>SPI = EV / PV</strong></p>
+                        <p>Measures earned progress to planned progress</p>
+                        <ul>
+                            <li>= 1.0: On target</li>
+                            <li>> 1.0: Ahead of schedule</li>
+                            <li>< 1.0: Behind schedule</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="cursor: default;">
+                        <h4>CPI (Cost Performance Index)</h4>
+                        <p><strong>CPI = EV / AC</strong></p>
+                        <p>Measures earned progress to actual cost incurred</p>
+                        <ul>
+                            <li>= 1.0: On budget</li>
+                            <li>> 1.0: Under budget</li>
+                            <li>< 1.0: Over budget</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Traditional EVM Considerations</h2>
+                <ul>
+                    <li>Increased expense to Owner for CMAR scheduling / estimating / accounting staff</li>
+                    <li>Increased expense to Owner for Subcontractor estimating / reporting / accounting staff</li>
+                    <li>Direct Labor Cost method requires access to Subcontractor "books" through GMP Subcontracts or Integrated Project Delivery (IPD) Contract</li>
+                    <li>Ideal when work activities are repetitive and easily measurable</li>
+                    <li>Level of Work Breakdown Structure (WBS) should be "right sized" to Owner requirements</li>
+                    <li>Benefit of EVM is dependent on accuracy of estimates, reporting, and tracking</li>
+                </ul>
+                
+                <div class="card" style="cursor: default; background: #fff3cd; border-left: 4px solid #ffc107;">
+                    <p style="margin: 0;"><strong>⚠️ Key Challenge:</strong> If a contractor struggles to accurately collect and report labor data in accordance with Owner's desired WBS, then the data will be flawed and inform the Owner incorrectly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--neutral-light);">
+            <div class="container">
+                <h2>Key Issues Preventing Traditional EVM</h2>
+                <p>The following issues arise when assessing whether traditional EVM should be utilized for CMAR/GMP projects:</p>
+                
+                <h3>1. Direct Labor Cost Access</h3>
+                <p>Project includes hard bid lump sum subcontracts where CMAR and Owner have <strong>no access to direct labor costs</strong> from subcontracts.</p>
+                
+                <h3>2. Resource Loaded Schedule</h3>
+                <p>Project did not require Resource Loaded Schedule in CMAR estimate, prior to construction schedule development, or as part of subcontractor bid requirements.</p>
+                
+                <h3>3. Non-Repetitive Work</h3>
+                <p>Custom vertical construction with limited repetitive activities makes traditional progress measurement more complex.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Alternative Approach: EVM-Alt</h2>
+                <p>This research proposes an alternative methodology that enables project teams to track meaningful KPIs and performance metrics <strong>without requiring a fully resource-loaded schedule</strong> or access to subcontractor labor cost data.</p>
+                
+                <div class="card" style="cursor: default; border-left: 4px solid var(--accent);">
+                    <h3>Benefits of EVM-Alt</h3>
+                    <ul>
+                        <li>Works within existing CMAR/GMP contract structures</li>
+                        <li>Does not require subcontractor "open book" agreements</li>
+                        <li>Leverages available project data (pay applications, schedule progress)</li>
+                        <li>Provides actionable performance indicators for project leadership</li>
+                        <li>Scalable across multiple project types and sizes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--neutral-light);">
+            <div class="container">
+                <h2>Real-World Application</h2>
+                <p>This methodology was developed and applied on the <strong>Charlotte Douglas International Airport (CLT) Concourse A Expansion Phase II</strong> project — a complex aviation construction program delivered under CMAR/GMP contract structure.</p>
+                
+                <div class="card" style="cursor: default;">
+                    <h3>Project Details</h3>
+                    <ul style="list-style: none; margin: 0; padding: 0;">
+                        <li><strong>Project:</strong> CLT Concourse A Expansion Phase II (CAP2)</li>
+                        <li><strong>Contractor:</strong> JE Dunn-McFarland Joint Venture</li>
+                        <li><strong>Contract Type:</strong> CMAR with GMP</li>
+                        <li><strong>Delivery:</strong> Complex aviation terminal expansion</li>
+                    </ul>
+                </div>
+                
+                <div style="text-align: center; margin-top: var(--spacing-lg);">
+                    <a href="../projects.html" class="btn btn-primary" style="background: var(--primary); color: white;">← Back to All Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Chris Tolleson | CMET 6000 - AI in Construction and Facilities | UNC Charlotte</p>
+        </div>
+    </footer>
+</body>
+</html>
